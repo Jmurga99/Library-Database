@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+      <center>
+        <h1>Prestamos</h1>
+
+        <form method="post" action="TablaModPrestamos.php">
+          <p>
+            <select REQUIRED name="nacionalidad">
+              <option value="V-">V-</option>
+              <option value="E-">E-</option>
+            </select>
+            
+            <input type="number" name="Cedula" placeholder="Cedula" min="999999" max="99999999"/>
+          </p>
+          <p>
+
+            <input type="text" name="Nombre" placeholder="Nombre" pattern="[A-Za-z]{1,100}">
+          </p>
+          <p>
+
+            <input type="text" name="Apellido" placeholder="Apellido" pattern="[A-Za-z]{1,100}">
+          </p>
+          <p>
+
+            <input type="text" name="Libro" placeholder="Libro">
+          </p>
+          <p>
+            Fecha de Devolucion:
+            <input type="date" name="Fecha" >
+          </p>
+          <p>
+
+            <input type="email" name="Correo" placeholder="Correo">
+          </p>
+          <p>
+
+            <input type="tel" name="Telefono" placeholder="Telefono">
+          </p>
+          <p>
+            Tipo de prestamo:
+            <select name="Tipo">
+              <option value="">Tipo</option>
+              <option value="Interno">Interno</option>
+              <option value="Externo">Externo</option>
+            </select>
+
+          </p>
+          <p>
+            <input type="submit" value="Buscar">
+          </p>
+        </form>
+      </center>   
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+</head>
+<body>
+  <h1 align="center">Lectores</h1>
+  <form method="post" action="TablaLectoresEli.php">
+    <p align="center">
+      <select name="nacionalidad">
+        <option value="V-">V-</option>
+        <option value="E-">E-</option>
+      </select>
+      
+      <input type="number" name="Cedula" placeholder="Cedula" min="999999" max="99999999"/>
+    </p>
+    <p align="center">
+
+      <input type="text" name="Nombre" placeholder="Nombre" pattern="[A-Za-z]{1,100}"/>
+    </p>
+    <p align="center">
+
+      <input type="text" name="Apellido" placeholder="Apellido" pattern="[A-Za-z]{1,100}"/>
+    </p>
+    <p align="center">
+
+      <input type="email" name="Correo" Placeholder="Correo" />
+    </p>
+    <p align="center">
+
+      <input type="tel" name="Telefono" placeholder="Telefono" />
+    </p>
+    <p align="center">
+
+      <select name="Tipo">
+        <option value="">Tipo</option>
+        <option value="Profesor">Profesor</option>
+        <option value="Estudiante">Estudiante</option>
+      </select>
+    </p>
+    <p align="center">
+      <input type="submit" value="Buscar" />
+    </p>
+  </form>
+  </body>
+</html>
